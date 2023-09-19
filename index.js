@@ -12,7 +12,7 @@ const urlBacon = "https://jsonplaceholder.typicode.com/photos";
             alert("no good");
         });
 })()
-
+// ************************ *//
 var url = 'https://jsonplaceholder.typicode.com/photos/1';
 var xhr = new XMLHttpRequest()
 xhr.open('GET', url, true)
@@ -26,7 +26,7 @@ xhr.onload = function() {
 }
 xhr.send(null);
 
-
+// ************************ *//
 
 var url = "https://reqres.in/api/users";
 
@@ -50,7 +50,7 @@ xhr.onload = function() {
 }
 xhr.send(json);
 
-
+// ************************ *//
 
 
 var url = "https://reqres.in/api/users";
@@ -75,7 +75,7 @@ xhr.onload = function() {
 }
 xhr.send(json);
 
-DELETE
+// ************************ *//
 var url = 'https://reqres.in/api/users';
 var xhr = new XMLHttpRequest()
 xhr.open('DELETE', url + "/2", true)
@@ -89,7 +89,7 @@ xhr.onload = function() {
 }
 xhr.send(null);
 
-
+// ************************ *//
 const myPromise = new Promise((resolve, reject) => { resolve(0) })
 
 myPromise
@@ -112,7 +112,7 @@ myPromise
         }
     )
 
-
+// ************************ *//
 fetch('https://jsonplaceholder.typicode.com/todos')
     .then(response => response.json())
     .then(
@@ -132,7 +132,7 @@ fetch('https://jsonplaceholder.typicode.com/todos')
     .catch(() => console.log('Có lỗi!'))
 
 
-
+// ************************ *//
 fetch('https://reqres.in/api/users', {
         method: 'POST',
         body: JSON.stringify({
@@ -146,6 +146,7 @@ fetch('https://reqres.in/api/users', {
     .then((response) => response.json())
     .then((json) => console.log(json));
 
+// ************************ *//
 fetch('https://reqres.in/api/users/2', {
         method: 'PUT',
         body: JSON.stringify({
@@ -159,7 +160,7 @@ fetch('https://reqres.in/api/users/2', {
     .then((response) => response.json())
     .then((json) => console.log(json));
 
-
+// ************************ *//
 axios({
         method: 'get',
         url: 'https://jsonplaceholder.typicode.com/todos/1',
@@ -179,6 +180,7 @@ function httpGetAsync(Url, callback) {
     xmlHttp.send(null);
 }
 
+// ************************ *//
 httpGetAsync('https://picsum.photos/200/300', (data) => {
     console.log('1', data);
     document.getElementById('img_1').setAttribute('src', data.responseURL);
